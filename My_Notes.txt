@@ -1,0 +1,8 @@
+
+
+NEXUS PROJECT MAP:
+- src/pages: Contains the main screens (Auth, Dashboard, Deals).
+- src/components: Contains small parts (Buttons, Layouts).
+- tailwind.config.js: Where I change the colors and theme.
+
+

@@ -10,6 +10,7 @@ import { useAuth } from '../../context/AuthContext';
 import { CollaborationRequest } from '../../types';
 import { getRequestsForEntrepreneur } from '../../data/collaborationRequests';
 import { investors } from '../../data/users';
+import MeetingCalendar from '../../components/MeetingCalendar';
 
 export const EntrepreneurDashboard: React.FC = () => {
   const { user } = useAuth();
@@ -169,6 +170,12 @@ export const EntrepreneurDashboard: React.FC = () => {
           </Card>
         </div>
       </div>
+      {/* --- ADD THIS NEW SECTION BELOW --- */}
+      <div className="mt-8 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+        <h2 className="text-xl font-bold mb-4 text-gray-900">Meeting Schedule</h2>
+        <MeetingCalendar />
+      </div>
+      {/* --- END OF NEW SECTION --- */}
     </div>
   );
 };
