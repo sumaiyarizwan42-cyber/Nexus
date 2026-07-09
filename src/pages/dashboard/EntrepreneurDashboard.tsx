@@ -11,6 +11,8 @@ import { CollaborationRequest } from '../../types';
 import { getRequestsForEntrepreneur } from '../../data/collaborationRequests';
 import { investors } from '../../data/users';
 import MeetingCalendar from '../../components/MeetingCalendar';
+import VideoCall from '../../components/VideoCall';
+import DocumentChamber from '../../components/DocumentChamber';
 
 export const EntrepreneurDashboard: React.FC = () => {
   const { user } = useAuth();
@@ -169,6 +171,16 @@ export const EntrepreneurDashboard: React.FC = () => {
             </CardBody>
           </Card>
         </div>
+      </div>
+      {/* --- VIDEO CALL SECTION --- */}
+      <div className="mt-8">
+        <h2 className="text-xl font-bold mb-4 text-gray-900">Virtual Meeting Room</h2>
+        <VideoCall />
+      </div>
+      {/* --- DOCUMENT CHAMBER SECTION --- */}
+      <div className="mt-8">
+        <h2 className="text-xl font-bold mb-4 text-gray-900">Document Processing Chamber</h2>
+        <DocumentChamber />
       </div>
       {/* --- ADD THIS NEW SECTION BELOW --- */}
       <div className="mt-8 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
