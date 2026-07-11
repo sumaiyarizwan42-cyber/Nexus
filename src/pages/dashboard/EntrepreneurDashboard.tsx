@@ -172,22 +172,21 @@ export const EntrepreneurDashboard: React.FC = () => {
           </Card>
         </div>
       </div>
-      {/* --- VIDEO CALL SECTION --- */}
-      <div className="mt-8">
-        <h2 className="text-xl font-bold mb-4 text-gray-900">Virtual Meeting Room</h2>
-        <VideoCall />
+      {/* --- WEEK 2 FEATURES SIDE-BY-SIDE --- */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+        <div>
+          <h2 className="text-lg font-bold mb-4 text-gray-900">Virtual Meeting Room</h2>
+          <VideoCall />
+        </div>
+        <div>
+          <h2 className="text-lg font-bold mb-4 text-gray-900">Document Vault</h2>
+          <DocumentChamber />
+        </div>
+        <div>
+          <h2 className="text-lg font-bold mb-4 text-gray-900">Meeting Schedule</h2>
+          <MeetingCalendar />
+        </div>
       </div>
-      {/* --- DOCUMENT CHAMBER SECTION --- */}
-      <div className="mt-8">
-        <h2 className="text-xl font-bold mb-4 text-gray-900">Document Processing Chamber</h2>
-        <DocumentChamber />
-      </div>
-      {/* --- ADD THIS NEW SECTION BELOW --- */}
-      <div className="mt-8 bg-white p-6 rounded-xl shadow-sm border border-gray-100">
-        <h2 className="text-xl font-bold mb-4 text-gray-900">Meeting Schedule</h2>
-        <MeetingCalendar />
-      </div>
-      {/* --- END OF NEW SECTION --- */}
     </div>
   );
 };
